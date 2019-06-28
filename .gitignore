@@ -1,5 +1,5 @@
 *.mat
-results/
+result/
 *.csv
 *.fig
 *.png
