@@ -1,3 +1,8 @@
+# Water Reflectance Products
+
+The scripts given here originates from the first leg the EN640 cruise
+http://strs.unols.org/Public/diu_project_view.aspx?project_id=105682
+
 The L2s_process.m is the "main file"
 It should be sufficiently documented.
 
@@ -13,8 +18,8 @@ For the output file '*.results' see generate_result_file.m
 To adjust paramters, see init section of L2s_process.m
 
 
-STRUCTURE OF SCRIPTS
-
+## STRUCTURE OF SCRIPTS
+```
 L2s_process.m               -> Main script, parameters in the init section 
 ├── L2s_process_dat.m       -> Reading .dat files
 │   └── importfile_dat.m    -> Converting .dat file to MATLAB format 
@@ -27,9 +32,10 @@ L2s_process.m               -> Main script, parameters in the init section
 │   	└── b_bw_lambda.m   -> LUT for backscattering of pure seawater
 ├── plot_results_compact.m  -> Save intresting plots as .fig from data
 └── plot_results_png.m      -> Save intresting plots as .png from data
+```
 
 
-Potential TODO'S
+## Potential TODO'S
 - Should employ git for revision control and documentation of SW
 - LW is denoted LS in the scripts but prints as LW,
   might be confusing. Should convert completely to LW
@@ -42,7 +48,7 @@ Potential TODO'S
 - Should investigate slope of absorption coefficient for phtyoplankton pigments
 
 
-TEXTUAL DESCRIPTION OF METHODS USED
+## TEXTUAL DESCRIPTION OF METHODS USED
 This section is dedicated to describe how the data processing of the acquired 
 spectra and accompnaying meta data was performed wrt. preprocessing. 
 The preprocessing  was conducted to retrive the most accurate water-leaving
