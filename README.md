@@ -1,6 +1,6 @@
 # Water Reflectance Products
 
-The scripts given here originates from the first leg the EN640 cruise
+The scripts given here originates from the first leg of the EN640 cruise
 http://strs.unols.org/Public/diu_project_view.aspx?project_id=105682
 
 The L2s_process.m is the "main file"
@@ -29,14 +29,13 @@ L2s_process.m               -> Main script, parameters in the init section
 │   ├── NIR_calculations.m  -> save NIR values of filtered data to .result file
 │   ├── OC4_calculations.m  -> OC4 using SeaWiFS on median data to .result file
 │   └── QAA_calculations.m  -> QAA output from median data to .result file
-│   	└── b_bw_lambda.m   -> LUT for backscattering of pure seawater
+│   	└── b_bw_lambda.m     -> LUT for backscattering of pure seawater
 ├── plot_results_compact.m  -> Save intresting plots as .fig from data
 └── plot_results_png.m      -> Save intresting plots as .png from data
 ```
 
 
 ## Potential TODO'S
-- Should employ git for revision control and documentation of SW
 - LW is denoted LS in the scripts but prints as LW,
   might be confusing. Should convert completely to LW
 - OC4_calculations.m does not account for band response of SeaWiFS
